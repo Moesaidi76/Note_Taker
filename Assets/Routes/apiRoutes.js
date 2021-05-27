@@ -1,6 +1,5 @@
-const note_data = require("../db/db.json");
-
-//const router = require("express").Router();
+const note_data = require("./htmlRoutes");
+const router = require("express").Router();
 // exporting html paths
 module.exports = function(app) {
 
