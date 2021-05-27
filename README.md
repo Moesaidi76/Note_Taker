@@ -1,35 +1,58 @@
-# 11 Express.js: Note Taker
-
-## Your Task
-
-Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
-
-The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
+## Note Taker
 
 
-## User Story
+![GitHub license](https://img.shields.io/badge/Made%20by-%40Mohamed-Blue)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-```
-AS A small business owner
-I WANT to be able to write and save notes
+*Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file*
+
+### Link to Deployed Application
+
+
+### Description
+
+- Build the backend for a given frontend application
+- The following HTML routes should be created:
+    - GET `/notes` - Should return the notes.html file.
+    - GET `*` - Should return the index.html file
+
+- The application should have a db.json file on the backend that will be used to store and retrieve notes using the fs module
+- The following API routes should be created:
+    - GET `/api/notes` - Should read the db.json file and return all saved notes as JSON
+    - POST `/api/notes` - Should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client
+    - DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete
+
+### User Story
+
+```text
+AS A user, I want to be able to write and save notes
+I WANT to be able to delete notes I've written before
 SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
+### Acceptance Criteria
 
-## Acceptance Criteria
-
+```text
+Application should allow users to create and save notes.
+Application should allow users to view previously saved notes.
+Application should allow users to delete previously saved notes.
 ```
-GIVEN a note-taking application
-WHEN I open the Note Taker
-THEN I am presented with a landing page with a link to a notes page
-WHEN I click on the link to the notes page
-THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note title and the note’s text
-THEN a Save icon appears in the navigation at the top of the page
-WHEN I click on the Save icon
-THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
-WHEN I click on an existing note in the list in the left-hand column
-THEN that note appears in the right-hand column
-WHEN I click on the Write icon in the navigation at the top of the page
-THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-``
+
+### App Screenshot
+
+![](public/assets/images/note-taker.png)
+
+## Licence
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## Contributors
+
+![GitHub license](https://img.shields.io/badge/Made%20by-%40Mohamed-Blue)
+Mohamed Saidi
+
+
+## GitHub
+
+- Mohamed Saidi
+- [GitHub Profile](https://github.com/Moesaidi76)
